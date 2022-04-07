@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ButtonTheme(
-              minWidth: 200,
+              minWidth: 125,
               child: RaisedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/about');
@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.only(bottom: 35.0),
             ),
             ButtonTheme(
-              minWidth: 200,
+              minWidth: 125,
               child: RaisedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/portofolio');
@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
               padding: EdgeInsets.only(bottom: 35.0),
             ),
             ButtonTheme(
-              minWidth: 200,
+              minWidth: 125,
               child: RaisedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/contact');
