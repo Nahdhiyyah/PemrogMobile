@@ -128,8 +128,8 @@ class Contact extends StatelessWidget {
           children: [
             ListTile(
               title: Container(
-                width: 350,
-                height: 350,
+                width: 300,
+                height: 300,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   color: Colors.black,
