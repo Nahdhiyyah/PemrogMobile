@@ -127,10 +127,16 @@ class Contact extends StatelessWidget {
             child: ListView(
           children: [
             ListTile(
-              title: Image.asset(
-                'assets/images/1.jpg',
-                width: 300,
-                height: 150,
+              title: Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30.0),
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/1.jpg'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
             ),
             ListTile(
