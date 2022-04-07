@@ -128,7 +128,7 @@ class Contact extends StatelessWidget {
           children: [
             ListTile(
               title: Image.asset(
-                'asset/images/1.jpg',
+                'assets/images/1.jpg',
                 width: 150,
                 height: 150,
               ),
