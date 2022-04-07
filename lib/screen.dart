@@ -131,7 +131,7 @@ class Contact extends StatelessWidget {
                 width: 200,
                 height: 200,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30.0),
+                  borderRadius: BorderRadius.circular(100),
                   image: DecorationImage(
                     image: AssetImage('assets/images/1.jpg'),
                     fit: BoxFit.cover,
