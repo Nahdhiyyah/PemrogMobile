@@ -121,7 +121,7 @@ class Contact extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text('Contacts'),
+          title: Text('Contact Person'),
         ),
         body: new Container(
             child: ListView(
