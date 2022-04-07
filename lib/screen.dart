@@ -76,7 +76,7 @@ class AboutPage extends StatelessWidget {
       body: Container(
           child: Center(
         child: Text(
-          "Materi ini adalah materi pembelajaran tentang routing dan navigator pada android",
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17),
         ),
       )),
@@ -107,7 +107,7 @@ class Portofolio extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(bottom: 20.0),
               ),
-              Text("Materi ini adalah materi pembelajaran tentang routing dan navigator pada android"),
+              Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
             ],
           ),
         ));
