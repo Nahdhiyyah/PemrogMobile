@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -117,36 +118,30 @@ class Portofolio extends StatelessWidget {
 class Contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final List<String> sub = [
-      'Nadia 1',
-      'Nadia 2',
-      'Nadia 3',
-      'Nadia 4',
-      'Nadia 5',
-      'Nadia 6',
-      'Nadia 7',
-      'Nadia 8',
-      'Nadia 9',
-      'Nadia 10',
-      'Nadia 11'
-    ];
-
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Text('Contacts'),
-      ),
-      body: ListView.builder(
-        itemCount: sub.length,
-        itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-              leading: Icon(Icons.account_circle),
-              title: Text(sub[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 15)),
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: Text('Contacts'),
+        ),
+        body: new Container(
+            child: ListView(
+          children: [
+            ListTile(
+              title: Image.asset(
+                'asset/images/1.jpg',
+                width: 150,
+                height: 150,
+              ),
             ),
-          );
-        },
-      ),
-    );
+            ListTile(
+              leading: Icon(Icons.account_circle, color: Colors.black),
+              title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+            ),
+            ListTile(
+              leading: Icon(Icons.email, color: Colors.black),
+              title: Text('nahdhiyyah13@gmail.com', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+            ),
+          ],
+        )));
   }
 }
