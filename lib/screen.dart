@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
                 },
                 color: Colors.black,
                 child: Text(
-                  'Tap Untuk ke AboutPage',
+                  'About',
                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
                 ),
               ),
@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
                 },
                 color: Colors.black,
                 child: Text(
-                  'Tap Halaman Portofolio',
+                  'Portofolio',
                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
                 ),
               ),
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
                 },
                 color: Colors.black,
                 child: Text(
-                  'Tap Halaman Contact',
+                  'Contact',
                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
                 ),
               ),
