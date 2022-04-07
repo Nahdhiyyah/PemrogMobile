@@ -129,7 +129,7 @@ class Contact extends StatelessWidget {
             ListTile(
               title: Container(
                 width: 225,
-                height: 250,
+                height: 225,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   color: Colors.black,
