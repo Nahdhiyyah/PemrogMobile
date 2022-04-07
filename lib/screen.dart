@@ -13,42 +13,51 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/about');
-              },
-              color: Colors.black,
-              child: Text(
-                'Tap Untuk ke AboutPage',
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+            ButtonTheme(
+              minWidth: 200,
+              child: RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/about');
+                },
+                color: Colors.black,
+                child: Text(
+                  'Tap Untuk ke AboutPage',
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+                ),
               ),
             ),
             Padding(
               padding: EdgeInsets.only(bottom: 35.0),
             ),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/portofolio');
-              },
-              color: Colors.black,
-              child: Text(
-                'Tap Halaman Portofolio',
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+            ButtonTheme(
+              minWidth: 200,
+              child: RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/portofolio');
+                },
+                color: Colors.black,
+                child: Text(
+                  'Tap Halaman Portofolio',
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+                ),
               ),
             ),
             Padding(
               padding: EdgeInsets.only(bottom: 35.0),
             ),
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/contact');
-              },
-              color: Colors.black,
-              child: Text(
-                'Tap Halaman Contact',
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+            ButtonTheme(
+              minWidth: 200,
+              child: RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/contact');
+                },
+                color: Colors.black,
+                child: Text(
+                  'Tap Halaman Contact',
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+                ),
               ),
-            ),
+            )
           ],
         ),
       ),
