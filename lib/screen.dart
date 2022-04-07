@@ -129,7 +129,7 @@ class Contact extends StatelessWidget {
             ListTile(
               title: Image.asset(
                 'assets/images/1.jpg',
-                width: 150,
+                width: 300,
                 height: 150,
               ),
             ),
