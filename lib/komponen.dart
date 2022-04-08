@@ -210,6 +210,7 @@ class ContactUs extends StatelessWidget {
                   border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
                 ),
               ),
+              Padding(padding: EdgeInsets.all(20)),
               TextFormField(
                 decoration: new InputDecoration(
                   hintText: "masukan nama lengkap anda",
