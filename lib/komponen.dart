@@ -192,7 +192,7 @@ class ContactUs extends StatelessWidget {
       ),
       body: Container(
           child: ListView(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(20),
         children: [
           TextFormField(
             decoration: new InputDecoration(
