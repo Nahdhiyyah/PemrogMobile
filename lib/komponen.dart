@@ -62,7 +62,7 @@ class DrawerWidget extends StatelessWidget {
 
 Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
-    decoration: BoxDecoration(color: Colors.black),
+    decoration: BoxDecoration(color: Colors.black26),
     currentAccountPicture: ClipOval(
       child: Image(image: AssetImage('assets/images/2.jpg'), fit: BoxFit.cover),
     ),
@@ -121,7 +121,7 @@ class Profil extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.work, color: Colors.black),
-              title: Text('Collage Student', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+              title: Text('Student', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
             ),
             ListTile(
               leading: Icon(Icons.email, color: Colors.black),
@@ -133,19 +133,34 @@ class Profil extends StatelessWidget {
 }
 
 class Portofolio extends StatelessWidget {
+  final List<String> gambar = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Portofolio'),
+        title: Text("Portofolio"),
       ),
-      body: Container(
-        padding: EdgeInsets.all(30),
-        child: Text(
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17),
+      body: GridView.builder(
+        scrollDirection: Axis.vertical,
+        shrinkWrap: true,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
         ),
+        itemCount: gambar.length,
+        itemBuilder: (context, index) {
+          return Container(
+            child: ListTile(
+              title: ClipRRect(
+                  child: Image.asset(
+                gambar[index],
+                height: 150,
+                width: 200,
+                fit: BoxFit.cover,
+              )),
+            ),
+          );
+        },
       ),
     );
   }
