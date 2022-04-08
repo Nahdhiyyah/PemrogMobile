@@ -117,15 +117,15 @@ class Profil extends StatelessWidget {
             ListTile(),
             ListTile(
               leading: Icon(Icons.person, color: Colors.black),
-              title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+              title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
             ),
             ListTile(
               leading: Icon(Icons.work, color: Colors.black),
-              title: Text('Collage Student', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+              title: Text('Collage Student', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
             ),
             ListTile(
               leading: Icon(Icons.email, color: Colors.black),
-              title: Text('nahdhiyyah13@gmail.com', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+              title: Text('nahdhiyyah13@gmail.com', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
             ),
           ],
         )));
