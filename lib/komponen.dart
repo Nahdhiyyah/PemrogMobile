@@ -102,7 +102,7 @@ class Profil extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text('Tentang Aplikasi'),
+          title: Text('Profil'),
         ),
         body: new Container(
             child: ListView(
@@ -134,7 +134,7 @@ class Portofolio extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Tentang Aplikasi'),
+        title: Text('Portofolio'),
       ),
       body: Container(
         padding: EdgeInsets.all(30),
