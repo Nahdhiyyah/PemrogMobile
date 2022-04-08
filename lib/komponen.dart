@@ -38,19 +38,19 @@ class DrawerWidget extends StatelessWidget {
           ),
           _drawerItem(
               icon: Icons.event_note,
-              text: 'Trash',
+              text: 'Descriptions',
               onTap: () {
                 Navigator.pushNamed(context, '/contact');
               }),
           _drawerItem(
               icon: Icons.settings,
-              text: 'Trash',
+              text: 'Setting',
               onTap: () {
                 Navigator.pushNamed(context, '/contact');
               }),
           _drawerItem(
               icon: Icons.collections,
-              text: 'Trash',
+              text: 'Galery',
               onTap: () {
                 Navigator.pushNamed(context, '/contact');
               }),
