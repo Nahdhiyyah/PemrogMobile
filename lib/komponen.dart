@@ -11,19 +11,19 @@ class DrawerWidget extends StatelessWidget {
           _drawerHeader(),
           _drawerItem(
               icon: Icons.account_circle,
-              text: 'My Movie',
+              text: 'Account',
               onTap: () {
                 Navigator.pushNamed(context, '/about');
               }),
           _drawerItem(
-              icon: Icons.favorite,
-              text: 'My Favorite',
+              icon: Icons.business_center,
+              text: 'Portofolio',
               onTap: () {
                 Navigator.pushNamed(context, '/portofolio');
               }),
           _drawerItem(
-              icon: Icons.favorite,
-              text: 'My Favorite',
+              icon: Icons.contact_phone,
+              text: 'Contact Us',
               onTap: () {
                 Navigator.pushNamed(context, '/contact');
               }),
@@ -37,7 +37,19 @@ class DrawerWidget extends StatelessWidget {
                 )),
           ),
           _drawerItem(
-              icon: Icons.delete,
+              icon: Icons.event_note,
+              text: 'Trash',
+              onTap: () {
+                Navigator.pushNamed(context, '/contact');
+              }),
+          _drawerItem(
+              icon: Icons.settings,
+              text: 'Trash',
+              onTap: () {
+                Navigator.pushNamed(context, '/contact');
+              }),
+          _drawerItem(
+              icon: Icons.collections,
               text: 'Trash',
               onTap: () {
                 Navigator.pushNamed(context, '/contact');
