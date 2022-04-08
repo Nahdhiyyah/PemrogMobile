@@ -205,18 +205,18 @@ class ContactUs extends StatelessWidget {
           Padding(padding: EdgeInsets.all(10)),
           TextFormField(
             decoration: new InputDecoration(
-              hintText: "masukan nama lengkap anda",
-              labelText: "Nama Lengkap",
-              icon: Icon(Icons.people),
+              hintText: "masukan alamat email anda",
+              labelText: "Email",
+              icon: Icon(Icons.email),
               border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
             ),
           ),
           Padding(padding: EdgeInsets.all(10)),
           TextFormField(
             decoration: new InputDecoration(
-              hintText: "masukan nama lengkap anda",
-              labelText: "Nama Lengkap",
-              icon: Icon(Icons.people),
+              hintText: "tulis pesan",
+              labelText: "Pesan",
+              icon: Icon(Icons.chat),
               border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
             ),
           ),
