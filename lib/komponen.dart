@@ -175,7 +175,7 @@ class Portofolio extends StatelessWidget {
                   child: Image.asset(
                 gambar[index],
                 height: 150,
-                width: 200,
+                width: 250,
                 fit: BoxFit.cover,
               )),
             ),
