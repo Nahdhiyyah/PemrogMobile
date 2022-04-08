@@ -111,8 +111,9 @@ class Profil extends StatelessWidget {
                 title: CircleAvatar(
               radius: 72.0,
               backgroundColor: Colors.black,
-              backgroundImage: AssetImage('assets/images/2.jpg'),
+              backgroundImage: AssetImage('assets/images/1.jpg'),
             )),
+            ListTile(),
             ListTile(
               leading: Icon(Icons.account_circle, color: Colors.black),
               title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
