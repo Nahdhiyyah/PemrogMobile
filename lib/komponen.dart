@@ -64,7 +64,7 @@ Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
     decoration: BoxDecoration(color: Colors.black26),
     currentAccountPicture: ClipOval(
-      child: Image(image: AssetImage('"assets/images/bw22.jpg"'), fit: BoxFit.cover),
+      child: Image(image: AssetImage('assets/images/bw22.jpg'), fit: BoxFit.cover),
     ),
     otherAccountsPictures: [
       ClipOval(
