@@ -190,12 +190,15 @@ class ContactUs extends StatelessWidget {
         backgroundColor: Colors.black,
         title: Text("Contact Us"),
       ),
-      body: TextFormField(
-        decoration: new InputDecoration(
-          hintText: "masukan nama lengkap anda",
-          labelText: "Nama Lengkap",
-          icon: Icon(Icons.people),
-          border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+      body: Container(
+        padding: EdgeInsets.all(35),
+        child: TextFormField(
+          decoration: new InputDecoration(
+            hintText: "masukan nama lengkap anda",
+            labelText: "Nama Lengkap",
+            icon: Icon(Icons.people),
+            border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+          ),
         ),
       ),
     );
