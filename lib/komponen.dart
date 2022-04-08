@@ -71,7 +71,7 @@ Widget _drawerHeader() {
         child: Image(image: AssetImage('assets/images/1.jpg'), fit: BoxFit.cover),
       ),
     ],
-    accountName: Text('Nad'),
+    accountName: Text('Nadia'),
     accountEmail: Text('nahdhiyyah13@gmail.com'),
   );
 }
