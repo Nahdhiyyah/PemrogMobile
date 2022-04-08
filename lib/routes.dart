@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screen.dart';
+import 'komponen.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
