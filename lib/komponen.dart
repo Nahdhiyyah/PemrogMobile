@@ -13,7 +13,7 @@ class DrawerWidget extends StatelessWidget {
               icon: Icons.account_circle,
               text: 'Account',
               onTap: () {
-                Navigator.pushNamed(context, '/about');
+                Navigator.pushNamed(context, '/account');
               }),
           _drawerItem(
               icon: Icons.business_center,
@@ -25,7 +25,7 @@ class DrawerWidget extends StatelessWidget {
               icon: Icons.contact_phone,
               text: 'Contact Us',
               onTap: () {
-                Navigator.pushNamed(context, '/contact');
+                Navigator.pushNamed(context, '/contactUs');
               }),
           Divider(height: 25, thickness: 1),
           Padding(
@@ -40,19 +40,19 @@ class DrawerWidget extends StatelessWidget {
               icon: Icons.event_note,
               text: 'Descriptions',
               onTap: () {
-                Navigator.pushNamed(context, '/contact');
+                Navigator.pushNamed(context, '/description');
               }),
           _drawerItem(
               icon: Icons.settings,
               text: 'Setting',
               onTap: () {
-                Navigator.pushNamed(context, '/contact');
+                Navigator.pushNamed(context, '/setting');
               }),
           _drawerItem(
               icon: Icons.collections,
               text: 'Galery',
               onTap: () {
-                Navigator.pushNamed(context, '/contact');
+                Navigator.pushNamed(context, '/galery');
               }),
         ],
       ),
