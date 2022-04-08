@@ -19,7 +19,7 @@ class NavigationDrawer extends StatelessWidget {
         title: Text("Drawer Nav"),
       ),
       drawer: DrawerWidget(),
-      body: Center(child: Text('Belajar Navigation Drawer di Flutter', style: TextStyle(fontSize: 20))),
+      body: Center(child: Text('Welcome', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold))),
     );
   }
 }
