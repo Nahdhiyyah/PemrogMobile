@@ -64,11 +64,11 @@ Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
     decoration: BoxDecoration(color: Colors.black26),
     currentAccountPicture: ClipOval(
-      child: Image(image: AssetImage('assets/images/2.jpg'), fit: BoxFit.cover),
+      child: Image(image: AssetImage('"assets/images/bw22.jpg"'), fit: BoxFit.cover),
     ),
     otherAccountsPictures: [
       ClipOval(
-        child: Image(image: AssetImage('assets/images/1.jpg'), fit: BoxFit.cover),
+        child: Image(image: AssetImage('assets/images/2.jpg'), fit: BoxFit.cover),
       ),
     ],
     accountName: Text('Nadia', style: TextStyle(color: Colors.black)),
@@ -112,7 +112,9 @@ class Profil extends StatelessWidget {
                 title: CircleAvatar(
               radius: 100.0,
               backgroundColor: Colors.transparent,
-              backgroundImage: AssetImage('assets/images/2.jpg'),
+              backgroundImage: AssetImage(
+                "assets/images/bw22.jpg",
+              ),
             )),
             ListTile(),
             ListTile(
@@ -152,7 +154,6 @@ class Portofolio extends StatelessWidget {
     "assets/images/bw19.jpg",
     "assets/images/bw20.jpg",
     "assets/images/bw21.jpg",
-    "assets/images/bw22.jpg",
   ];
   @override
   Widget build(BuildContext context) {
