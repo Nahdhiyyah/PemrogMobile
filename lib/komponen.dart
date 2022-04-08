@@ -10,13 +10,7 @@ class DrawerWidget extends StatelessWidget {
         children: <Widget>[
           _drawerHeader(),
           _drawerItem(
-              icon: Icons.audiotrack,
-              text: 'My Music',
-              onTap: () {
-                Navigator.pushNamed(context, '/');
-              }),
-          _drawerItem(
-              icon: Icons.movie,
+              icon: Icons.account_circle,
               text: 'My Movie',
               onTap: () {
                 Navigator.pushNamed(context, '/about');
