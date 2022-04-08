@@ -154,7 +154,6 @@ class Portofolio extends StatelessWidget {
     "assets/images/bw19.jpg",
     "assets/images/bw20.jpg",
     "assets/images/bw21.jpg",
-    "assets/images/bw9.jpg",
   ];
   @override
   Widget build(BuildContext context) {
