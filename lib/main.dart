@@ -16,7 +16,7 @@ class NavigationDrawer extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Drawer Nav"),
+        title: Text("Home"),
       ),
       drawer: DrawerWidget(),
       body: Center(child: Text('Welcome', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold))),
