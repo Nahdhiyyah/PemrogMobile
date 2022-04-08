@@ -19,7 +19,7 @@ class NavigationDrawer extends StatelessWidget {
         title: Text("Home"),
       ),
       drawer: DrawerWidget(),
-      body: Center(child: Text('Welcome..', style: TextStyle(color: Colors.black26, fontSize: 25, fontWeight: FontWeight.bold))),
+      body: Center(child: Text('Welcome..', style: TextStyle(color: Colors.black38, fontSize: 25, fontWeight: FontWeight.bold))),
     );
   }
 }
