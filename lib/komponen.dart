@@ -108,19 +108,11 @@ class Profil extends StatelessWidget {
             child: ListView(
           children: [
             ListTile(
-              title: Container(
-                width: 225,
-                height: 225,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(300),
-                  color: Colors.black,
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/2.jpg'),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            ),
+                title: CircleAvatar(
+              radius: 72.0,
+              backgroundColor: Colors.black,
+              backgroundImage: AssetImage('assets/images/2.jpg'),
+            )),
             ListTile(
               leading: Icon(Icons.account_circle, color: Colors.black),
               title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
