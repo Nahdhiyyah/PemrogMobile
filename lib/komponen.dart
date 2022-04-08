@@ -154,7 +154,7 @@ class Portofolio extends StatelessWidget {
     "assets/images/bw19.jpg",
     "assets/images/bw20.jpg",
     "assets/images/bw21.jpg",
-    "assets/images/3.jpg"
+    "assets/images/bw9.jpg",
   ];
   @override
   Widget build(BuildContext context) {
@@ -166,7 +166,7 @@ class Portofolio extends StatelessWidget {
       body: GridView.count(
         crossAxisCount: 2,
         children: List.generate(
-          17,
+          gambar.length,
           (index) {
             return Card(
               child: Image.asset(
