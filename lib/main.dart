@@ -15,6 +15,7 @@ class NavigationDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text("Drawer Nav"),
       ),
       drawer: DrawerWidget(),
