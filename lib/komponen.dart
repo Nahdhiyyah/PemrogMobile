@@ -162,26 +162,21 @@ class Portofolio extends StatelessWidget {
         backgroundColor: Colors.black,
         title: Text("Portofolio"),
       ),
-      body: GridView.builder(
-        scrollDirection: Axis.vertical,
-        shrinkWrap: true,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-        ),
-        itemCount: gambar.length,
-        itemBuilder: (context, index) {
-          return Container(
-            child: ListTile(
-              title: ClipRRect(
-                  child: Image.asset(
+      body: GridView.count(
+        crossAxisCount: 2,
+        children: List.generate(
+          17,
+          (index) {
+            return Card(
+              child: Image.asset(
                 gambar[index],
+                width: 150,
                 height: 150,
-                width: 250,
                 fit: BoxFit.cover,
-              )),
-            ),
-          );
-        },
+              ),
+            );
+          },
+        ),
       ),
     );
   }
