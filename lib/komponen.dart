@@ -106,12 +106,13 @@ class Profil extends StatelessWidget {
         ),
         body: new Container(
             child: ListView(
+          padding: EdgeInsets.all(50),
           children: [
             ListTile(
                 title: CircleAvatar(
               radius: 72.0,
               backgroundColor: Colors.black,
-              backgroundImage: AssetImage('assets/images/1.jpg'),
+              backgroundImage: AssetImage('assets/images/3.jpg'),
             )),
             ListTile(),
             ListTile(
