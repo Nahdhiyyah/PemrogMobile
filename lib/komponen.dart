@@ -186,29 +186,19 @@ class ContactUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          title: Text('Portofolio'),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text("Contact Us"),
+      ),
+      body: TextFormField(
+        decoration: new InputDecoration(
+          hintText: "masukan nama lengkap anda",
+          labelText: "Nama Lengkap",
+          icon: Icon(Icons.people),
+          border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
         ),
-        body: Container(
-          //color: Color.fromARGB(255, 255, 245, 233),
-          padding: EdgeInsets.all(20.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Image.asset(
-                'assets/images/1.jpg',
-                height: 350,
-                width: 350,
-                fit: BoxFit.cover,
-              ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 20.0),
-              ),
-              Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."),
-            ],
-          ),
-        ));
+      ),
+    );
   }
 }
 
@@ -291,37 +281,6 @@ class Setting extends StatelessWidget {
 class Galery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          title: Text('Contact Person'),
-        ),
-        body: new Container(
-            child: ListView(
-          children: [
-            ListTile(
-              title: Container(
-                width: 225,
-                height: 225,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(300),
-                  color: Colors.black,
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/1.jpg'),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            ),
-            ListTile(
-              leading: Icon(Icons.account_circle, color: Colors.black),
-              title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
-            ),
-            ListTile(
-              leading: Icon(Icons.email, color: Colors.black),
-              title: Text('nahdhiyyah13@gmail.com', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
-            ),
-          ],
-        )));
+    return Scaffold();
   }
 }
