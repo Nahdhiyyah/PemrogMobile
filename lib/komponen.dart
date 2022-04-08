@@ -111,7 +111,7 @@ class Profil extends StatelessWidget {
             ListTile(
                 title: CircleAvatar(
               radius: 72.0,
-              backgroundColor: Colors.black,
+              backgroundColor: Colors.transparent,
               backgroundImage: AssetImage('assets/images/3.jpg'),
             )),
             ListTile(),
