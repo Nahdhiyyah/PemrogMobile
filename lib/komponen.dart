@@ -116,8 +116,12 @@ class Profil extends StatelessWidget {
             )),
             ListTile(),
             ListTile(
-              leading: Icon(Icons.account_circle, color: Colors.black),
+              leading: Icon(Icons.person, color: Colors.black),
               title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+            ),
+            ListTile(
+              leading: Icon(Icons.work, color: Colors.black),
+              title: Text('Collage Student', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
             ),
             ListTile(
               leading: Icon(Icons.email, color: Colors.black),
