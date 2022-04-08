@@ -196,7 +196,22 @@ class ContactUs extends StatelessWidget {
             children: [
               TextFormField(
                 decoration: new InputDecoration(
-                  focusColor: Colors.black,
+                  hintText: "masukan nama lengkap anda",
+                  labelText: "Nama Lengkap",
+                  icon: Icon(Icons.people),
+                  border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+                ),
+              ),
+              TextFormField(
+                decoration: new InputDecoration(
+                  hintText: "masukan nama lengkap anda",
+                  labelText: "Nama Lengkap",
+                  icon: Icon(Icons.people),
+                  border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+                ),
+              ),
+              TextFormField(
+                decoration: new InputDecoration(
                   hintText: "masukan nama lengkap anda",
                   labelText: "Nama Lengkap",
                   icon: Icon(Icons.people),
