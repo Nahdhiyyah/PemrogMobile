@@ -191,36 +191,36 @@ class ContactUs extends StatelessWidget {
         title: Text("Contact Us"),
       ),
       body: Container(
-          padding: EdgeInsets.all(35),
           child: ListView(
-            children: [
-              TextFormField(
-                decoration: new InputDecoration(
-                  hintText: "masukan nama lengkap anda",
-                  labelText: "Nama Lengkap",
-                  icon: Icon(Icons.people),
-                  border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
-                ),
-              ),
-              TextFormField(
-                decoration: new InputDecoration(
-                  hintText: "masukan nama lengkap anda",
-                  labelText: "Nama Lengkap",
-                  icon: Icon(Icons.people),
-                  border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(20)),
-              TextFormField(
-                decoration: new InputDecoration(
-                  hintText: "masukan nama lengkap anda",
-                  labelText: "Nama Lengkap",
-                  icon: Icon(Icons.people),
-                  border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
-                ),
-              ),
-            ],
-          )),
+        padding: EdgeInsets.all(10),
+        children: [
+          TextFormField(
+            decoration: new InputDecoration(
+              hintText: "masukan nama lengkap anda",
+              labelText: "Nama Lengkap",
+              icon: Icon(Icons.people),
+              border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+            ),
+          ),
+          TextFormField(
+            decoration: new InputDecoration(
+              hintText: "masukan nama lengkap anda",
+              labelText: "Nama Lengkap",
+              icon: Icon(Icons.people),
+              border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+            ),
+          ),
+          //Padding(padding: EdgeInsets.all(20)),
+          TextFormField(
+            decoration: new InputDecoration(
+              hintText: "masukan nama lengkap anda",
+              labelText: "Nama Lengkap",
+              icon: Icon(Icons.people),
+              border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+            ),
+          ),
+        ],
+      )),
     );
   }
 }
