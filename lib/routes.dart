@@ -4,8 +4,8 @@ import 'komponen.dart';
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case '/account':
-        return MaterialPageRoute(builder: (_) => Account());
+      case '/profil':
+        return MaterialPageRoute(builder: (_) => Profil());
       case '/portofolio':
         return MaterialPageRoute(builder: (_) => Portofolio());
       case '/contactUs':

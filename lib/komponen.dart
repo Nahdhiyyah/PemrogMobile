@@ -11,9 +11,9 @@ class DrawerWidget extends StatelessWidget {
           _drawerHeader(),
           _drawerItem(
               icon: Icons.account_circle,
-              text: 'Account',
+              text: 'Profil',
               onTap: () {
-                Navigator.pushNamed(context, '/account');
+                Navigator.pushNamed(context, '/profil');
               }),
           _drawerItem(
               icon: Icons.business_center,
@@ -96,22 +96,41 @@ Widget _drawerItem({required IconData icon, required String text, required Gestu
   );
 }
 
-class Account extends StatelessWidget {
+class Profil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Text('Tentang Aplikasi'),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(30),
-        child: Text(
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17),
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: Text('Tentang Aplikasi'),
         ),
-      ),
-    );
+        body: new Container(
+            child: ListView(
+          children: [
+            ListTile(
+              title: Container(
+                width: 225,
+                height: 225,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(300),
+                  color: Colors.black,
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/2.jpg'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle, color: Colors.black),
+              title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+            ),
+            ListTile(
+              leading: Icon(Icons.email, color: Colors.black),
+              title: Text('nahdhiyyah13@gmail.com', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+            ),
+          ],
+        )));
   }
 }
 
