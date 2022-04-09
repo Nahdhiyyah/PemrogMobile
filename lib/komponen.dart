@@ -104,6 +104,7 @@ class Profil extends StatelessWidget {
             child: ListView(
           padding: EdgeInsets.all(30),
           children: [
+            Padding(padding: EdgeInsets.all(10)),
             ListTile(
                 title: CircleAvatar(
               radius: 100.0,
