@@ -201,7 +201,7 @@ class ContactUs extends StatelessWidget {
             children: [
               Column(children: [
                 Icon(
-                  Icons.call,
+                  Icons.call_received_rounded,
                   color: Colors.black38,
                   size: 75.0,
                 ),
