@@ -272,7 +272,7 @@ class Setting extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text('Settings'),
+          title: Text('Setting'),
         ),
         body: new Container(
             padding: EdgeInsets.all(20),
