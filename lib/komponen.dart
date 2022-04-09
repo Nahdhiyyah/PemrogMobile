@@ -32,7 +32,7 @@ class DrawerWidget extends StatelessWidget {
           Divider(height: 25, thickness: 1),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
-            child: Text("Description",
+            child: Text("Descriptions",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black54,
@@ -275,32 +275,15 @@ class Setting extends StatelessWidget {
           title: Text('Contact Person'),
         ),
         body: new Container(
+            padding: EdgeInsets.all(20),
             child: ListView(
-          children: [
-            ListTile(
-              title: Container(
-                width: 225,
-                height: 225,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(300),
-                  color: Colors.black,
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/1.jpg'),
-                    fit: BoxFit.cover,
-                  ),
+              children: [
+                Center(
+                  child: Text("Informations"),
                 ),
-              ),
-            ),
-            ListTile(
-              leading: Icon(Icons.account_circle, color: Colors.black),
-              title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
-            ),
-            ListTile(
-              leading: Icon(Icons.email, color: Colors.black),
-              title: Text('nahdhiyyah13@gmail.com', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
-            ),
-          ],
-        )));
+                Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+              ],
+            )));
   }
 }
 
