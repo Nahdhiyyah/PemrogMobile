@@ -357,11 +357,11 @@ class Galery extends StatelessWidget {
                 width: 200,
                 fit: BoxFit.cover,
               ),
-              subtitle: Text(
-                sub[index],
-                style: TextStyle(color: Colors.black87),
-                textAlign: TextAlign.center,
-              ),
+              // subtitle: Text(
+              //   sub[index],
+              //   style: TextStyle(color: Colors.black87),
+              //   textAlign: TextAlign.center,
+              // ),
             ),
           );
         },
