@@ -204,26 +204,20 @@ class ContactUs extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(children: [
-                ButtonTheme(
-                    minWidth: 50,
-                    height: 50,
-                    child: IconButton(
-                        highlightColor: Colors.pink,
-                        icon: Icon(Icons.call, size: 30),
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/profil');
-                        }))
+                IconButton(
+                    highlightColor: Colors.pink,
+                    icon: Icon(Icons.call, size: 30),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/profil');
+                    })
               ]),
               Column(children: [
-                ButtonTheme(
-                    minWidth: 50,
-                    height: 50,
-                    child: IconButton(
-                        highlightColor: Colors.pink,
-                        icon: Icon(Icons.email, size: 30),
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/profil');
-                        }))
+                IconButton(
+                    highlightColor: Colors.pink,
+                    icon: Icon(Icons.email, size: 30),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/profil');
+                    })
               ]),
             ],
           ),
