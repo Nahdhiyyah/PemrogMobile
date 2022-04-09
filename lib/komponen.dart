@@ -199,7 +199,7 @@ class ContactUs extends StatelessWidget {
             children: [
               Column(children: [
                 ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(primary: Colors.black, onPrimary: Colors.black26),
+                    style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
                     label: Text("No HP"),
                     icon: Icon(Icons.call),
                     onPressed: () {
@@ -208,7 +208,7 @@ class ContactUs extends StatelessWidget {
               ]),
               Column(children: [
                 ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(primary: Colors.grey, onPrimary: Colors.black),
+                    style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
                     label: Text("Email"),
                     icon: Icon(Icons.email),
                     onPressed: () {
