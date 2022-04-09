@@ -194,6 +194,7 @@ class ContactUs extends StatelessWidget {
           child: ListView(
         padding: EdgeInsets.all(20),
         children: [
+          Padding(padding: EdgeInsets.all(10)),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
