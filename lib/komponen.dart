@@ -197,10 +197,10 @@ class ContactUs extends StatelessWidget {
           TextFormField(
             cursorColor: Colors.black12,
             decoration: new InputDecoration(
-              hintText: "tulis pesan",
-              labelText: "Pesan",
+              hintText: "tulis nama lengkap",
+              labelText: "Nama Lengkap",
               labelStyle: TextStyle(color: Colors.black),
-              icon: Icon(Icons.chat, color: Colors.black),
+              icon: Icon(Icons.people, color: Colors.black),
               enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
               focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
             ),
@@ -209,10 +209,10 @@ class ContactUs extends StatelessWidget {
           TextFormField(
             cursorColor: Colors.black12,
             decoration: new InputDecoration(
-              hintText: "tulis pesan",
-              labelText: "Pesan",
+              hintText: "tulis alamat email",
+              labelText: "Email",
               labelStyle: TextStyle(color: Colors.black),
-              icon: Icon(Icons.chat, color: Colors.black),
+              icon: Icon(Icons.email, color: Colors.black),
               enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
               focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
             ),
