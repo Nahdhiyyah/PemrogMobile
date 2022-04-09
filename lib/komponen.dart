@@ -207,12 +207,13 @@ class ContactUs extends StatelessWidget {
                 ButtonTheme(
                     minWidth: 50,
                     height: 50,
-                    child: IconButton(
-                        highlightColor: Colors.pink,
-                        icon: Icon(Icons.call, size: 30),
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/profil');
-                        }))
+                    child: Center(
+                        child: IconButton(
+                            highlightColor: Colors.pink,
+                            icon: Icon(Icons.call, size: 30),
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/profil');
+                            })))
               ]),
               Column(children: [
                 ButtonTheme(
