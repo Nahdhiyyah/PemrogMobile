@@ -198,13 +198,16 @@ class ContactUs extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(children: [
-                ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
-                    label: Text("No HP"),
-                    icon: Icon(Icons.call),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/profil');
-                    })
+                ButtonTheme(
+                    minWidth: 125,
+                    height: 60,
+                    child: ElevatedButton.icon(
+                        style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
+                        label: Text("No HP"),
+                        icon: Icon(Icons.call),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/profil');
+                        }))
               ]),
               Column(children: [
                 ElevatedButton.icon(
