@@ -220,6 +220,8 @@ class ContactUs extends StatelessWidget {
               border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
             ),
           ),
+          Padding(padding: EdgeInsets.all(10)),
+          ElevatedButton(onPressed: () => print("Data anda telah terekam"), child: Text("Submit"))
         ],
       )),
     );
