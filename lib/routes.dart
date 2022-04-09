@@ -10,8 +10,6 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Portofolio());
       case '/contactUs':
         return MaterialPageRoute(builder: (_) => ContactUs());
-      case '/description':
-        return MaterialPageRoute(builder: (_) => Description());
       case '/setting':
         return MaterialPageRoute(builder: (_) => Setting());
       case '/galery':

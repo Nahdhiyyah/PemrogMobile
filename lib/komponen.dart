@@ -32,18 +32,12 @@ class DrawerWidget extends StatelessWidget {
           Divider(height: 25, thickness: 1),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
-            child: Text("Others",
+            child: Text("Description",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black54,
                 )),
           ),
-          _drawerItem(
-              icon: Icons.event_note,
-              text: 'Descriptions',
-              onTap: () {
-                Navigator.pushNamed(context, '/description');
-              }),
           _drawerItem(
               icon: Icons.settings,
               text: 'Setting',
@@ -269,44 +263,6 @@ class ContactUs extends StatelessWidget {
         ],
       )),
     );
-  }
-}
-
-class Description extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          title: Text('Contact Person'),
-        ),
-        body: new Container(
-            child: ListView(
-          children: [
-            ListTile(
-              title: Container(
-                width: 225,
-                height: 225,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(300),
-                  color: Colors.black,
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/1.jpg'),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            ),
-            ListTile(
-              leading: Icon(Icons.account_circle, color: Colors.black),
-              title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
-            ),
-            ListTile(
-              leading: Icon(Icons.email, color: Colors.black),
-              title: Text('nahdhiyyah13@gmail.com', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
-            ),
-          ],
-        )));
   }
 }
 
