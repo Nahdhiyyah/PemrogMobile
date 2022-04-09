@@ -202,7 +202,7 @@ class ContactUs extends StatelessWidget {
                     minWidth: 125,
                     child: ElevatedButton.icon(
                         style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
-                        label: Text("No HP"),
+                        label: Text("Phone"),
                         icon: Icon(Icons.call),
                         onPressed: () {
                           Navigator.pushNamed(context, '/profil');
