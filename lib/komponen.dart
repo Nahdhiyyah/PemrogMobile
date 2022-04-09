@@ -194,6 +194,30 @@ class ContactUs extends StatelessWidget {
           child: ListView(
         padding: EdgeInsets.all(20),
         children: [
+          Row(
+            children: [
+              Column(
+                children: [
+                  ListTile(
+                    title: Icon(
+                      Icons.email,
+                    ),
+                    subtitle: Center(child: Text("nahdhiyyah13@gmail.com")),
+                  )
+                ],
+              ),
+              Column(
+                children: [
+                  ListTile(
+                    title: Icon(
+                      Icons.phone_android,
+                    ),
+                    subtitle: Center(child: Text("0878-6064-6581")),
+                  )
+                ],
+              ),
+            ],
+          ),
           TextFormField(
             cursorColor: Colors.black12,
             decoration: new InputDecoration(
