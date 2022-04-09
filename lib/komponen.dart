@@ -295,6 +295,11 @@ class Setting extends StatelessWidget {
 class Galery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Galery"),
+        backgroundColor: Colors.black,
+      ),
+    );
   }
 }
