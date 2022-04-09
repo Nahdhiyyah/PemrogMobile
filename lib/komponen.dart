@@ -214,6 +214,7 @@ class ContactUs extends StatelessWidget {
           Padding(padding: EdgeInsets.all(10)),
           TextFormField(
             decoration: new InputDecoration(
+              focusColor: Colors.black,
               hintText: "tulis pesan",
               labelText: "Pesan",
               icon: Icon(Icons.chat),
