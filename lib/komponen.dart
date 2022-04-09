@@ -205,6 +205,7 @@ class ContactUs extends StatelessWidget {
             children: [
               Column(children: [
                 IconButton(
+                    color: Colors.pink,
                     icon: Icon(Icons.call, size: 25),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
