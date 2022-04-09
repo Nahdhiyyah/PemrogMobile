@@ -202,16 +202,16 @@ class ContactUs extends StatelessWidget {
               new Icon(
                 Icons.favorite,
                 color: Colors.red,
-                size: 30.0,
+                size: 75.0,
               ),
               new Icon(
                 Icons.favorite,
                 color: Colors.red,
-                size: 30.0,
+                size: 75.0,
               ),
             ],
           ),
-          Padding(padding: EdgeInsets.all(50)),
+          Padding(padding: EdgeInsets.all(15)),
           TextFormField(
             cursorColor: Colors.black12,
             decoration: new InputDecoration(
