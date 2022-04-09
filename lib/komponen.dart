@@ -262,7 +262,10 @@ class ContactUs extends StatelessWidget {
             style: ElevatedButton.styleFrom(primary: Colors.black),
           ),
           Padding(padding: EdgeInsets.all(10)),
-          Text("*Anda dapat menghubungi kami dengan mengirim pesan email atau melakukan panggilan melalui kontak yang disediakan")
+          Text(
+            "*Anda dapat menghubungi kami dengan mengirim pesan email atau melakukan panggilan melalui kontak yang telah disediakan",
+            style: TextStyle(fontSize: 16),
+          )
         ],
       )),
     );
