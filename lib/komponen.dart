@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
 class DrawerWidget extends StatelessWidget {
@@ -196,16 +197,17 @@ class ContactUs extends StatelessWidget {
         padding: EdgeInsets.all(20),
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                children: [
-                  Icon(Icons.phone_android)
-                ],
+              new Icon(
+                Icons.favorite,
+                color: Colors.red,
+                size: 30.0,
               ),
-              Column(
-                children: [
-                  Icon(Icons.phone_android)
-                ],
+              new Icon(
+                Icons.favorite,
+                color: Colors.red,
+                size: 30.0,
               ),
             ],
           ),
