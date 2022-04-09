@@ -195,6 +195,7 @@ class ContactUs extends StatelessWidget {
         padding: EdgeInsets.all(20),
         children: [
           TextFormField(
+            cursorColor: Colors.black26,
             decoration: new InputDecoration(
               hintText: "tulis pesan",
               labelText: "Pesan",
