@@ -205,14 +205,14 @@ class ContactUs extends StatelessWidget {
             children: [
               Column(children: [
                 IconButton(
-                    icon: Icon(Icons.call),
+                    icon: Icon(Icons.call_rounded),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
               ]),
               Column(children: [
                 IconButton(
-                    icon: Icon(Icons.email),
+                    icon: Icon(Icons.email_rounded),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
