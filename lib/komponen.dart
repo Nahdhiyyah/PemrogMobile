@@ -198,7 +198,8 @@ class ContactUs extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(children: [
-                IconButton(
+                ElevatedButton.icon(
+                    label: Text("No HP"),
                     icon: Icon(Icons.call),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
