@@ -226,9 +226,21 @@ class ContactUs extends StatelessWidget {
             cursorColor: Colors.black12,
             decoration: new InputDecoration(
               hintText: "tulis nama lengkap",
-              labelText: "Nama Lengkap",
+              labelText: "Full Name",
               labelStyle: TextStyle(color: Colors.black),
               icon: Icon(Icons.people, color: Colors.black),
+              enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
+              focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
+            ),
+          ),
+          Padding(padding: EdgeInsets.all(10)),
+          TextFormField(
+            cursorColor: Colors.black12,
+            decoration: new InputDecoration(
+              hintText: "tulis nomor handphone",
+              labelText: "Phone",
+              labelStyle: TextStyle(color: Colors.black),
+              icon: Icon(Icons.call, color: Colors.black),
               enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.grey)),
               focusedBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
             ),
