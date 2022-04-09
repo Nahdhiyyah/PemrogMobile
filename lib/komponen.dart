@@ -213,7 +213,7 @@ class ContactUs extends StatelessWidget {
               ]),
             ],
           ),
-          Padding(padding: EdgeInsets.all(15)),
+          Padding(padding: EdgeInsets.all(20)),
           TextFormField(
             cursorColor: Colors.black12,
             decoration: new InputDecoration(
