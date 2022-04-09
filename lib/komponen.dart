@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class DrawerWidget extends StatelessWidget {
   @override
@@ -198,22 +199,12 @@ class ContactUs extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  ListTile(
-                    title: Icon(
-                      Icons.email,
-                    ),
-                    subtitle: Center(child: Text("nahdhiyyah13@gmail.com")),
-                  )
+                  Icon(Icons.phone_android)
                 ],
               ),
               Column(
                 children: [
-                  ListTile(
-                    title: Icon(
-                      Icons.phone_android,
-                    ),
-                    subtitle: Center(child: Text("0878-6064-6581")),
-                  )
+                  Icon(Icons.phone_android)
                 ],
               ),
             ],
