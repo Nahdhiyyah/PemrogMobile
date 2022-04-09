@@ -113,6 +113,7 @@ class Profil extends StatelessWidget {
                 "assets/images/bw22.jpg",
               ),
             )),
+            Padding(padding: EdgeInsets.all(15)),
             ListTile(
               leading: Icon(Icons.person, color: Colors.black),
               title: Text('Sarifatun Nadia', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
