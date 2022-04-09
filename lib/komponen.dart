@@ -213,7 +213,8 @@ class ContactUs extends StatelessWidget {
           ),
           Padding(padding: EdgeInsets.all(10)),
           TextFormField(
-            decoration: new InputDecoration(hintText: "tulis pesan", labelText: "Pesan", icon: Icon(Icons.chat), enabledBorder: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)), disabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black))),
+            decoration: new InputDecoration(hintText: "tulis pesan", labelText: "Pesan", icon: Icon(Icons.chat), 
+            border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
           ),
           Padding(padding: EdgeInsets.all(10)),
           ElevatedButton(onPressed: () => print("Data anda telah terekam"), child: Text("Submit"))
