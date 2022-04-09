@@ -346,8 +346,8 @@ class Galery extends StatelessWidget {
         shrinkWrap: true,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 30,
+          // crossAxisSpacing: 10,
+          // mainAxisSpacing: 30,
         ),
         itemCount: gambar.length,
         itemBuilder: (context, index) {
