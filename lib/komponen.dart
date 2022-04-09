@@ -13,13 +13,13 @@ class DrawerWidget extends StatelessWidget {
           _drawerHeader(),
           _drawerItem(
               icon: Icons.account_circle,
-              text: 'Profil',
+              text: 'Profile',
               onTap: () {
                 Navigator.pushNamed(context, '/profil');
               }),
           _drawerItem(
               icon: Icons.business_center,
-              text: 'Portofolio',
+              text: 'Portfolio',
               onTap: () {
                 Navigator.pushNamed(context, '/portofolio');
               }),
@@ -32,7 +32,7 @@ class DrawerWidget extends StatelessWidget {
           Divider(height: 25, thickness: 1),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
-            child: Text("Descriptions",
+            child: Text("Description",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black54,
@@ -46,7 +46,7 @@ class DrawerWidget extends StatelessWidget {
               }),
           _drawerItem(
               icon: Icons.collections,
-              text: 'Galery',
+              text: 'Gallery',
               onTap: () {
                 Navigator.pushNamed(context, '/galery');
               }),
@@ -98,7 +98,7 @@ class Profil extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text('Profil'),
+          title: Text('Profile'),
         ),
         body: new Container(
             child: ListView(
@@ -160,7 +160,7 @@ class Portofolio extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Portofolio"),
+        title: Text("Portfolio"),
       ),
       body: GridView.count(
         crossAxisCount: 2,
