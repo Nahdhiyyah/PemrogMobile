@@ -67,7 +67,7 @@ Widget _drawerHeader() {
         child: Image(image: AssetImage('assets/images/2.jpg'), fit: BoxFit.cover),
       ),
     ],
-    accountName: Text('Nadia', style: TextStyle(color: Colors.black)),
+    accountName: Text('Nadia', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
     accountEmail: Text('nahdhiyyah13@gmail.com', style: TextStyle(color: Colors.black)),
   );
 }
