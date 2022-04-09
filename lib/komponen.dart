@@ -199,16 +199,22 @@ class ContactUs extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              new Icon(
-                Icons.favorite,
-                color: Colors.red,
-                size: 75.0,
-              ),
-              new Icon(
-                Icons.favorite,
-                color: Colors.red,
-                size: 75.0,
-              ),
+              Column(children: [
+                Icon(
+                  Icons.call,
+                  color: Colors.red,
+                  size: 75.0,
+                ),
+                Text("087860646581")
+              ]),
+              Column(children: [
+                Icon(
+                  Icons.email_sharp,
+                  color: Colors.red,
+                  size: 75.0,
+                ),
+                Text("nahdhiyyah13@gmail.com")
+              ]),
             ],
           ),
           Padding(padding: EdgeInsets.all(15)),
