@@ -202,7 +202,7 @@ class ContactUs extends StatelessWidget {
               Column(children: [
                 Icon(
                   Icons.call,
-                  color: Colors.red,
+                  color: Colors.black38,
                   size: 75.0,
                 ),
                 Text("087860646581")
@@ -210,7 +210,7 @@ class ContactUs extends StatelessWidget {
               Column(children: [
                 Icon(
                   Icons.email_sharp,
-                  color: Colors.red,
+                  color: Colors.black38,
                   size: 75.0,
                 ),
                 Text("nahdhiyyah13@gmail.com")
