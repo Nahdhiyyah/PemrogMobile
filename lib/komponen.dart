@@ -201,7 +201,7 @@ class ContactUs extends StatelessWidget {
         padding: EdgeInsets.all(20),
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(children: [
                 IconButton(
