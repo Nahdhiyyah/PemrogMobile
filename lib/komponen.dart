@@ -205,7 +205,8 @@ class ContactUs extends StatelessWidget {
                     })
               ]),
               Column(children: [
-                IconButton(
+                ElevatedButton.icon(
+                    label: Text("Email"),
                     icon: Icon(Icons.email),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
