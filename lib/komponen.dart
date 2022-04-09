@@ -201,12 +201,12 @@ class ContactUs extends StatelessWidget {
         padding: EdgeInsets.all(20),
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(children: [
                 IconButton(
                     highlightColor: Colors.pink,
-                    icon: Icon(Icons.call, size: 30),
+                    icon: Icon(Icons.call),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
@@ -214,7 +214,7 @@ class ContactUs extends StatelessWidget {
               Column(children: [
                 IconButton(
                     highlightColor: Colors.pink,
-                    icon: Icon(Icons.email, size: 30),
+                    icon: Icon(Icons.email),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
