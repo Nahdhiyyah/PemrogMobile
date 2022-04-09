@@ -214,10 +214,13 @@ class ContactUs extends StatelessWidget {
           Padding(padding: EdgeInsets.all(10)),
           TextFormField(
             decoration: new InputDecoration(
-              hintText: "tulis pesan",
-              labelText: "Pesan",
-              icon: Icon(Icons.chat),
-              border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
+              enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.red, width: 5.0),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.blue, width: 3.0),
+              ),
+              hintText: "Search people",
             ),
           ),
           Padding(padding: EdgeInsets.all(10)),
