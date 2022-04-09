@@ -217,7 +217,7 @@ class ContactUs extends StatelessWidget {
               hintText: "tulis pesan",
               labelText: "Pesan",
               icon: Icon(Icons.chat),
-              border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+              border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0), borderSide: BorderSide(color: Colors.black)),
             ),
           ),
           Padding(padding: EdgeInsets.all(10)),
