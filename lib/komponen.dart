@@ -357,7 +357,7 @@ class Galery extends StatelessWidget {
                   child: Image.asset(
                 gambar[index],
                 height: 150,
-                width: 250,
+                width: 150,
                 fit: BoxFit.cover,
               )),
               subtitle: Text(sub[index], style: TextStyle(color: Colors.black87)),
