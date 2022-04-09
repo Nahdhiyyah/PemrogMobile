@@ -201,18 +201,18 @@ class ContactUs extends StatelessWidget {
         padding: EdgeInsets.all(20),
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Column(children: [
                 IconButton(
-                    icon: Icon(Icons.call, size: 35),
+                    icon: Icon(Icons.call),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
               ]),
               Column(children: [
                 IconButton(
-                    icon: Icon(Icons.email, size: 35),
+                    icon: Icon(Icons.email),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
