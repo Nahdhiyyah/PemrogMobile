@@ -128,6 +128,10 @@ class Profil extends StatelessWidget {
               title: Text('Student', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
             ),
             ListTile(
+              leading: Icon(Icons.call, color: Colors.black),
+              title: Text('0878-6064-6581', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+            ),
+            ListTile(
               leading: Icon(Icons.email, color: Colors.black),
               title: Text('nahdhiyyah13@gmail.com', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
             ),
@@ -201,14 +205,14 @@ class ContactUs extends StatelessWidget {
             children: [
               Column(children: [
                 IconButton(
-                    icon: Icon(Icons.call, size: 50),
+                    icon: Icon(Icons.call),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
               ]),
               Column(children: [
                 IconButton(
-                    icon: Icon(Icons.email, size: 50),
+                    icon: Icon(Icons.email),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
