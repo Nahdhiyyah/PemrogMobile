@@ -200,7 +200,7 @@ class ContactUs extends StatelessWidget {
               Column(children: [
                 ButtonTheme(
                     minWidth: 125,
-                    height: 60,
+                    height: 100,
                     child: ElevatedButton.icon(
                         style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
                         label: Text("No HP"),
