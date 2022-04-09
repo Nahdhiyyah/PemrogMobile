@@ -346,7 +346,6 @@ class Galery extends StatelessWidget {
         shrinkWrap: true,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisSpacing: 30,
         ),
         itemCount: gambar.length,
         itemBuilder: (context, index) {
@@ -356,7 +355,7 @@ class Galery extends StatelessWidget {
                   child: Image.asset(
                 gambar[index],
                 height: 150,
-                width: 200,
+                width: 150,
                 fit: BoxFit.cover,
               )),
               subtitle: Text(sub[index], style: TextStyle(color: Colors.black87)),
