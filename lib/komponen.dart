@@ -199,8 +199,8 @@ class ContactUs extends StatelessWidget {
             children: [
               Column(children: [
                 ButtonTheme(
-                    minWidth: 125,
-                    height: 100,
+                    minWidth: 150,
+                    height: 150,
                     child: ElevatedButton.icon(
                         style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
                         label: Text("No HP"),
@@ -210,13 +210,16 @@ class ContactUs extends StatelessWidget {
                         }))
               ]),
               Column(children: [
-                ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
-                    label: Text("Email"),
-                    icon: Icon(Icons.email),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/profil');
-                    })
+                ButtonTheme(
+                    minWidth: 150,
+                    height: 150,
+                    child: ElevatedButton.icon(
+                        style: ElevatedButton.styleFrom(primary: Colors.grey[50], onPrimary: Colors.black),
+                        label: Text("Email"),
+                        icon: Icon(Icons.email),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/profil');
+                        }))
               ]),
             ],
           ),
