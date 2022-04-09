@@ -352,16 +352,17 @@ class Galery extends StatelessWidget {
         itemCount: gambar.length,
         itemBuilder: (context, index) {
           return Card(
-              child: ListTile(
-            title: ClipRRect(
-                child: Image.asset(
-              gambar[index],
-              height: 150,
-              width: 150,
-              fit: BoxFit.cover,
-            )),
-            subtitle: Center(child: Text(sub[index], style: TextStyle(color: Colors.black87))),
-          ));
+            child: ListTile(
+              title: ClipRRect(
+                  child: Image.asset(
+                gambar[index],
+                height: 150,
+                width: 150,
+                fit: BoxFit.cover,
+              )),
+              subtitle: Text(sub[index], style: TextStyle(color: Colors.black87)),
+            ),
+          );
         },
       ),
     );
