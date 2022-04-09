@@ -346,8 +346,6 @@ class Galery extends StatelessWidget {
         shrinkWrap: true,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          // crossAxisSpacing: 10,
-          // mainAxisSpacing: 30,
         ),
         itemCount: gambar.length,
         itemBuilder: (context, index) {
@@ -360,7 +358,11 @@ class Galery extends StatelessWidget {
                 width: 150,
                 fit: BoxFit.cover,
               )),
-              subtitle: Text(sub[index], style: TextStyle(color: Colors.black87)),
+              subtitle: Text(
+                sub[index],
+                style: TextStyle(color: Colors.black87),
+                textAlign: TextAlign.center,
+              ),
             ),
           );
         },
