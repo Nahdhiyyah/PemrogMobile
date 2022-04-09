@@ -360,7 +360,7 @@ class Galery extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Galery"),
+        title: Text("Gallery"),
         backgroundColor: Colors.black,
       ),
       body: GridView.builder(
