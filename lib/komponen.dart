@@ -200,20 +200,18 @@ class ContactUs extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(children: [
-                Icon(
-                  Icons.call_received_rounded,
-                  color: Colors.black38,
-                  size: 75.0,
-                ),
-                Text("087860646581")
+                IconButton(
+                    icon: Icon(Icons.call, size: 50),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/profil');
+                    })
               ]),
               Column(children: [
-                Icon(
-                  Icons.email_sharp,
-                  color: Colors.black38,
-                  size: 75.0,
-                ),
-                Text("nahdhiyyah13@gmail.com")
+                IconButton(
+                    icon: Icon(Icons.email, size: 50),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/profil');
+                    })
               ]),
             ],
           ),
