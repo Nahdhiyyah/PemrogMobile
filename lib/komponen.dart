@@ -315,24 +315,24 @@ class Galery extends StatelessWidget {
   ];
 
   final List<String> sub = [
-    "bw4.jpg",
+    "assets/images/bw4.jpg",
     "assets/images/bw5.jpg",
-    "bw6.jpg",
-    "bw7.jpg",
-    "bw8.jpg",
-    "bw9.jpg",
-    "bw10.jpg",
-    "bw11.jpg",
-    "bw12.jpg",
-    "bw13.jpg",
-    "bw14.jpg",
-    "bw15.jpg",
-    "bw16.jpg",
-    "bw17.jpg",
-    "bw18.jpg",
-    "bw19.jpg",
-    "bw20.jpg",
-    "bw21.jpg",
+    "assets/images/bw6.jpg",
+    "assets/images/bw7.jpg",
+    "assets/images/bw8.jpg",
+    "assets/images/bw9.jpg",
+    "assets/images/bw10.jpg",
+    "assets/images/bw11.jpg",
+    "assets/images/bw12.jpg",
+    "assets/images/bw13.jpg",
+    "assets/images/bw14.jpg",
+    "assets/images/bw15.jpg",
+    "assets/images/bw16.jpg",
+    "assets/images/bw17.jpg",
+    "assets/images/bw18.jpg",
+    "assets/images/bw19.jpg",
+    "assets/images/bw20.jpg",
+    "assets/images/bw21.jpg",
   ];
   @override
   Widget build(BuildContext context) {
@@ -346,6 +346,8 @@ class Galery extends StatelessWidget {
         shrinkWrap: true,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 30,
         ),
         itemCount: gambar.length,
         itemBuilder: (context, index) {
@@ -355,10 +357,10 @@ class Galery extends StatelessWidget {
                   child: Image.asset(
                 gambar[index],
                 height: 150,
-                width: 150,
+                width: 200,
                 fit: BoxFit.cover,
               )),
-              subtitle: Center(child: Text(sub[index], style: TextStyle(color: Colors.black))),
+              subtitle: Text(sub[index], style: TextStyle(color: Colors.black87)),
             ),
           );
         },
