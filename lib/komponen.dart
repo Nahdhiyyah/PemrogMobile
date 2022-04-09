@@ -212,12 +212,15 @@ class ContactUs extends StatelessWidget {
                     })
               ]),
               Column(children: [
-                IconButton(
-                    highlightColor: Colors.pink,
-                    icon: Icon(Icons.email_rounded),
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/profil');
-                    })
+                ButtonTheme(
+                    minWidth: 30,
+                    height: 30,
+                    child: IconButton(
+                        highlightColor: Colors.pink,
+                        icon: Icon(Icons.call_rounded),
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/profil');
+                        }))
               ]),
             ],
           ),
