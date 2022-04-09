@@ -260,7 +260,9 @@ class ContactUs extends StatelessWidget {
             onPressed: () => print("Data anda telah terekam"),
             child: Text("Submit"),
             style: ElevatedButton.styleFrom(primary: Colors.black),
-          )
+          ),
+          Padding(padding: EdgeInsets.all(10)),
+          Text("*Anda dapat menghubungi kami dengan mengirim pesan email atau melakukan panggilan melalui kontak yang disediakan")
         ],
       )),
     );
