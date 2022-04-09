@@ -206,7 +206,10 @@ class ContactUs extends StatelessWidget {
               Column(children: [
                 IconButton(
                     highlightColor: Colors.pink,
-                    icon: Icon(Icons.call_rounded),
+                    icon: Icon(
+                      Icons.call_rounded,
+                      size: 30,
+                    ),
                     onPressed: () {
                       Navigator.pushNamed(context, '/profil');
                     })
@@ -217,7 +220,7 @@ class ContactUs extends StatelessWidget {
                     height: 30,
                     child: IconButton(
                         highlightColor: Colors.pink,
-                        icon: Icon(Icons.call_rounded),
+                        icon: Icon(Icons.call_rounded, size: 30),
                         onPressed: () {
                           Navigator.pushNamed(context, '/profil');
                         }))
