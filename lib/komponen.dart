@@ -207,6 +207,7 @@ class ContactUs extends StatelessWidget {
           ),
           Padding(padding: EdgeInsets.all(10)),
           TextFormField(
+            cursorColor: Colors.black12,
             decoration: new InputDecoration(
               hintText: "tulis pesan",
               labelText: "Pesan",
@@ -218,6 +219,7 @@ class ContactUs extends StatelessWidget {
           ),
           Padding(padding: EdgeInsets.all(10)),
           TextFormField(
+            cursorColor: Colors.black12,
             decoration: new InputDecoration(
               hintText: "tulis pesan",
               labelText: "Pesan",
@@ -228,7 +230,11 @@ class ContactUs extends StatelessWidget {
             ),
           ),
           Padding(padding: EdgeInsets.all(10)),
-          ElevatedButton(onPressed: () => print("Data anda telah terekam"), child: Text("Submit"))
+          ElevatedButton(
+            onPressed: () => print("Data anda telah terekam"),
+            child: Text("Submit"),
+            style: ElevatedButton.styleFrom(primary: Colors.black),
+          )
         ],
       )),
     );
