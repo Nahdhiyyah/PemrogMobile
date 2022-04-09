@@ -279,7 +279,7 @@ class Setting extends StatelessWidget {
             child: ListView(
               children: [
                 Center(
-                  child: Text("Informations", style: TextStyle(color: Colors.black38, fontWeight: FontWeight.bold, fontSize: 25)),
+                  child: Text("Information", style: TextStyle(color: Colors.black38, fontWeight: FontWeight.bold, fontSize: 25)),
                 ),
                 Padding(padding: EdgeInsets.all(10)),
                 Text("     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
@@ -293,12 +293,76 @@ class Setting extends StatelessWidget {
 }
 
 class Galery extends StatelessWidget {
+  final List<String> gambar = [
+    "assets/images/bw4.jpg",
+    "assets/images/bw5.jpg",
+    "assets/images/bw6.jpg",
+    "assets/images/bw7.jpg",
+    "assets/images/bw8.jpg",
+    "assets/images/bw9.jpg",
+    "assets/images/bw10.jpg",
+    "assets/images/bw11.jpg",
+    "assets/images/bw12.jpg",
+    "assets/images/bw13.jpg",
+    "assets/images/bw14.jpg",
+    "assets/images/bw15.jpg",
+    "assets/images/bw16.jpg",
+    "assets/images/bw17.jpg",
+    "assets/images/bw18.jpg",
+    "assets/images/bw19.jpg",
+    "assets/images/bw20.jpg",
+    "assets/images/bw21.jpg",
+  ];
+
+  final List<String> sub = [
+    "assets/images/bw4.jpg",
+    "assets/images/bw5.jpg",
+    "assets/images/bw6.jpg",
+    "assets/images/bw7.jpg",
+    "assets/images/bw8.jpg",
+    "assets/images/bw9.jpg",
+    "assets/images/bw10.jpg",
+    "assets/images/bw11.jpg",
+    "assets/images/bw12.jpg",
+    "assets/images/bw13.jpg",
+    "assets/images/bw14.jpg",
+    "assets/images/bw15.jpg",
+    "assets/images/bw16.jpg",
+    "assets/images/bw17.jpg",
+    "assets/images/bw18.jpg",
+    "assets/images/bw19.jpg",
+    "assets/images/bw20.jpg",
+    "assets/images/bw21.jpg",
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Galery"),
         backgroundColor: Colors.black,
+      ),
+      body: GridView.builder(
+        scrollDirection: Axis.vertical,
+        shrinkWrap: true,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 30,
+        ),
+        itemCount: gambar.length,
+        itemBuilder: (context, index) {
+          return Card(
+            child: ListTile(
+              title: ClipRRect(
+                  child: Image.asset(
+                gambar[index],
+                height: 150,
+                width: 200,
+                fit: BoxFit.cover,
+              )),
+              subtitle: Text(sub[index], style: TextStyle(color: Colors.black87)),
+            ),
+          );
+        },
       ),
     );
   }
