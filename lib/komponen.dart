@@ -315,8 +315,8 @@ class Galery extends StatelessWidget {
   ];
 
   final List<String> sub = [
-    "assets/images/bw4.jpg",
-    "assets/images/bw5.jpg",
+    "Forest",
+    "Mountain",
     "assets/images/bw6.jpg",
     "assets/images/bw7.jpg",
     "assets/images/bw8.jpg",
@@ -357,11 +357,11 @@ class Galery extends StatelessWidget {
                 width: 200,
                 fit: BoxFit.cover,
               ),
-              // subtitle: Text(
-              //   sub[index],
-              //   style: TextStyle(color: Colors.black87),
-              //   textAlign: TextAlign.center,
-              // ),
+              subtitle: Text(
+                sub[index],
+                style: TextStyle(color: Colors.black),
+                textAlign: TextAlign.center,
+              ),
             ),
           );
         },
