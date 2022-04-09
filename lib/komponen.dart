@@ -102,7 +102,7 @@ class Profil extends StatelessWidget {
         ),
         body: new Container(
             child: ListView(
-          padding: EdgeInsets.all(50),
+          padding: EdgeInsets.all(30),
           children: [
             ListTile(
                 title: CircleAvatar(
