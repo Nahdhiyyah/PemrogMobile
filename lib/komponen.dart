@@ -195,10 +195,11 @@ class ContactUs extends StatelessWidget {
         padding: EdgeInsets.all(20),
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(children: [
                 ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(primary: Colors.grey, onPrimary: Colors.black),
                     label: Text("No HP"),
                     icon: Icon(Icons.call),
                     onPressed: () {
@@ -207,6 +208,7 @@ class ContactUs extends StatelessWidget {
               ]),
               Column(children: [
                 ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(primary: Colors.grey, onPrimary: Colors.black),
                     label: Text("Email"),
                     icon: Icon(Icons.email),
                     onPressed: () {
